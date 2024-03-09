@@ -1,2 +1,1 @@
-# dots_ka
-# dots_ka
+#  Repositório de arquivos de configuração do twm  hypprland archlinux
