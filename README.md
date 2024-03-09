@@ -1,1 +1,1 @@
-#  Repositório de arquivos de configuração do twm  hypprland archlinux
+#  Repositório de arquivos de configuração do twm  hyprland archlinux
