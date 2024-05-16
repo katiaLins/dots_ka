@@ -22,7 +22,7 @@ case "$installChoice" in
     ler \
          
       echo "Installing file managers..."
-        sudo xbps-install -S xorg xterm xf86-video-vmware xf86-video-vesa mesa wayland wayland-protocols wayland-utils dbus avahi curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi utoconf automake bison m4 make libtool flex meson ninja optipng sassc
+        sudo xbps-install -S  xf86-video-vmware xf86-video-vesa mesa wayland wayland-protocols wayland-utils dbus avahi curl wget git xz unzip zip nano vim gptfdisk xtools mtools mlocate ntfs-3g fuse-exfat bash-completion linux-headers gtksourceview4 ffmpeg mesa-vdpau mesa-vaapi utoconf automake bison m4 make libtool flex meson ninja optipng sassc
         sudo xbps-install -Rs void-repo-nonfree 
 
       
@@ -44,10 +44,7 @@ case "$installChoice" in
         # Code editor
         echo "Installing flatpak..."
         sudo sudo xbps-install -S flatpak
-        
-        # PDF reader
-        echo "Installing flatpak..."
-        sudo flatpak remote-add --if-not-exists flathub https:/ /flathub.org/repo/flathub.flatpakrepo   
+         
         
         # Screenshot utility
         echo "Installing Screenshot Utility..."
@@ -58,10 +55,9 @@ case "$installChoice" in
         sudo sudo ln -s /etc/sv/gdm /var/service/
         sudo ln -s /etc/sv/NetworkManager /var/service/
         sudo ln -sv /etc/sv/bluetoothd /var/service
-        
-        # Audio recording and streaming
-        #echo "Installing Screen Recording Applications..."
-        #sudo pacman -S obs-studio wf-recorder
+        sudo sudo ln -s /etc/sv/dbus /var/service/
+
+        sudo reboot
         
 
         	
